@@ -30,7 +30,7 @@ WordPress
 
 Objective : 아파치 웹서버 띄워보기
 
-1. [Dockerfile](.apache_php/Dockerfile) 작성
+1. [Dockerfile](./apache_php/Dockerfile) 작성
 
    - [reference](https://docs.docker.com/engine/reference/builder/)
 

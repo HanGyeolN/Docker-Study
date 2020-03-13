@@ -1,0 +1,4 @@
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+example             latest              211ffe96a685        2 hours ago         258MB
+mysql               5.6                 c8078e8ab06d        8 days ago          303MB
+ubuntu              18.04               72300a873c2c        2 weeks ago         64.2MB

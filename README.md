@@ -73,23 +73,37 @@ Objective: MySQL 컨테이너 띄워보기
 
    `$docker exec -it <container id> /bin/bash`
 
-   - bash를 실행해서 컨테이너에 접속한 효과를 낼 수 있다
+   - bash를 실행해서 컨테이너에 접속한 효과를 낼 수 있다</br>
 
      
 
-3. Mysql 실행
+3. Mysql 실행 및 로그인, 계정 생성
 
    `$mysql -u root -p`
 
-   `$exit`
+   - [MySQL Manual]
 
-   - 외부에서의 접속은 또 다른 설정 필요
+   ```mysql
+   > use mysql;
+   > CREATE USER '<user_id>'@'%' IDENTIFIED BY '<password>';
+   > GRANT ALL PRIVILEGES ON *.* TO '<user_id>'@'%';
+   > FLUSH PRIVILEGES;
+   > exit
+   ```
 
-   
+   </br>
 
-   
+4. 컨테이너 재부팅
 
-   
+   `$docker restart <container_id>`
 
-   
+
+
+## php_mysql
+
+Objective : 서로 다른 컨테이너에 있는 php 웹서버와 mysql을 연동시켜 사용해보기
+
+- [MacOS 에서 IP주소 확인](https://leenow.tistory.com/7)
+
+- Container의 ip주소 확인 `$docker inspect a82200ef8d25 | grep IPAddress`</br>
 

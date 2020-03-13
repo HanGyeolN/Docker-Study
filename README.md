@@ -24,6 +24,8 @@ WordPress
 
 `$docker rmi -f 'docker images'`
 
+</br>
+
 ## apache_php
 
 Objective : 아파치 웹서버 띄워보기
@@ -52,11 +54,13 @@ Objective : 아파치 웹서버 띄워보기
 
 4. php문법에 따라 html안에 php파일을 작성 ([index.php](./apache_php/html/index.php))
    
-   ​     
-   
        `$docker run -p 81:80 -v ~/.../html:/var/www/html name_test`
    
-   - 이런식으로 81번 포트로 바꿔서 열어주면 여러 포트로 접속이 되도록 할 수 있다.</br>
+   - 이런식으로 81번 포트로 바꿔서 열어주면 여러 포트로 접속이 되도록 할 수 있다.
+   
+     </br>
+   
+     </br>
 
 ## mysql
 
@@ -95,10 +99,10 @@ Objective: MySQL 컨테이너 띄워보기
 4. 컨테이너 재부팅
 
    `$docker restart <container_id>`
-
-
-
-
+   
+   </br>
+   
+   </br>
 
 ## php_mysql
 
@@ -125,3 +129,4 @@ Objective : 서로 다른 컨테이너에 있는 php 웹서버와 mysql을 연�
    - php 문법으로 php페이지와 mysql을 연동</br>
 
 4. localhost 접속 후 결과페이지 확인
+

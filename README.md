@@ -130,3 +130,22 @@ Objective : 서로 다른 컨테이너에 있는 php 웹서버와 mysql을 연�
 
 4. localhost 접속 후 결과페이지 확인
 
+
+
+## nginx_php
+
+Objective : debian-buster에 nginx를 설치하고 index.php 띄우기
+
+- [[debian-buster]](https://hub.docker.com/_/debian) [[nginx]](https://hub.docker.com/_/nginx) [[php]]
+
+- 컨테이너에서 어플리케이션 서버는 foreground 모드로 실행해야한다. [참고]([https://www.popit.kr/%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EC%B2%98%EC%9D%8C-docker-%EC%A0%91%ED%95%A0%EB%95%8C-%EC%98%A4%EB%8A%94-%EB%A9%98%EB%B6%95-%EB%AA%87%EA%B0%80%EC%A7%80/](https://www.popit.kr/개발자가-처음-docker-접할때-오는-멘붕-몇가지/))
+
+
+
+1. Debian-buster 설치
+   - 
+2. nginx 설치
+   - foreground 모드로 실행
+   - 80번 포트 오픈
+3. php 설치
+   - 
